@@ -1,17 +1,12 @@
 import styled from "styled-components";
 import "animate.css";
 
-export const Limits = styled.div`
-  width: 100%;
-
-  display: flex;
-`;
-
 export const Container = styled.div`
   width: 100%;
   background: var(--color-background-dark);
 
   color: #fff;
+  position: relative;
 `;
 
 export const Wrapper = styled.div`
