@@ -1,10 +1,26 @@
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
   width: 100%;
   background: var(--color-background-dark);
 
+  position: relative;
+  overflow: hidden;
+
   color: #fff;
+`;
+
+export const BackgroundText = styled.p`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  color: var(--color-darker);
+  font-size: 30.8rem;
+  font-family: "Roboto";
+
+  opacity: 0.5;
 `;
 
 export const Wrapper = styled.div`
@@ -17,6 +33,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
+  height: 100%;
   width: 100%;
 
   display: flex;
@@ -92,7 +109,7 @@ const LoadBar = keyframes`
   to { width: ${(props) => props.width}; }
 `;
 
-export const SkillBar = styled.h2`
+export const SkillBar = styled(motion.div)`
   height: 0.3rem;
   width: ${(props) => props.width};
   background: ${(props) => props.background};
@@ -100,7 +117,7 @@ export const SkillBar = styled.h2`
   position: absolute;
   top: 0;
 
-  animation: ${LoadBar} 1.5s ${(props) => props.delay}s ease-in-out backwards;
+  //animation: ${LoadBar} 1.5s ${(props) => props.delay}s ease-in-out backwards;
 `;
 
 export const AcademicLimits = styled.div`

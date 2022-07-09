@@ -8,8 +8,9 @@ const Home = () => {
   return (
     <S.Container>
       {
-        //<MyParticles />
+        //
       }
+      <MyParticles />
       <S.Wrapper>
         <Layout tagName="html" first={true} full={true}>
           <Layout tagName="body" full={true}>

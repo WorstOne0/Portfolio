@@ -28,6 +28,7 @@ const MyParticles = () => {
               value: "var(--color-background-dark)",
             },
           },
+          style: { height: "100vh", position: "relative" },
           fpsLimit: 120,
           interactivity: {
             events: {
@@ -80,13 +81,11 @@ const MyParticles = () => {
             },
             shape: {
               type: "circle",
-              character: ["+", "*", "✶", "❀", "©"],
             },
             size: {
               value: { min: 1, max: 5 },
             },
           },
-          detectRetina: true,
         }}
       />
     </S.Container>

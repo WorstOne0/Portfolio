@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -17,4 +17,20 @@ export const Wrapper = styled.div`
 
   display: flex;
   flex-direction: ${(props) => (props.column ? "row" : "column")};
+`;
+
+export const Content = styled.div`
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+export const Title = styled.h1`
+  color: var(--color-primary);
+  font-size: 8rem;
+
+  animation: fadeIn 0.5s 0.3s ease-in backwards;
 `;

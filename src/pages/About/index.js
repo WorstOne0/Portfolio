@@ -12,9 +12,10 @@ import { GiComputing } from "react-icons/gi";
 const About = () => {
   return (
     <S.Container>
+      <S.BackgroundText>About Me</S.BackgroundText>
       <S.Wrapper>
         <Layout tagName="section" first={true} full={true}>
-          <S.Wrapper column={true} auto={true}>
+          <S.Wrapper auto={true} column={true}>
             <S.Content>
               <Layout tagName="h2">
                 <S.Title>
@@ -43,9 +44,13 @@ const About = () => {
                   </S.SkillText>
                   <S.SkillBarContainer>
                     <S.SkillBar
-                      width={"80%"}
-                      delay={0.1}
+                      width={"0%"}
                       background={"#61dafb"}
+                      whileInView={{
+                        width: "80%",
+                        transition: { duration: 1, delay: 0.1 },
+                      }}
+                      viewport={{ once: true }}
                     />
                   </S.SkillBarContainer>
                 </S.SkillContainer>
@@ -56,9 +61,13 @@ const About = () => {
                   </S.SkillText>
                   <S.SkillBarContainer>
                     <S.SkillBar
-                      width={"60%"}
-                      delay={0.3}
+                      width={"0%"}
                       background={"#68A063"}
+                      whileInView={{
+                        width: "60%",
+                        transition: { duration: 1, delay: 0.3 },
+                      }}
+                      viewport={{ once: true }}
                     />
                   </S.SkillBarContainer>
                 </S.SkillContainer>
@@ -69,9 +78,13 @@ const About = () => {
                   </S.SkillText>
                   <S.SkillBarContainer>
                     <S.SkillBar
-                      width={"80%"}
-                      delay={0.5}
+                      width={"0%"}
                       background={"#00599c"}
+                      whileInView={{
+                        width: "80%",
+                        transition: { duration: 1, delay: 0.5 },
+                      }}
+                      viewport={{ once: true }}
                     />
                   </S.SkillBarContainer>
                 </S.SkillContainer>
@@ -82,9 +95,13 @@ const About = () => {
                   </S.SkillText>
                   <S.SkillBarContainer>
                     <S.SkillBar
-                      width={"60%"}
-                      delay={0.7}
+                      width={"0%"}
                       background={"#FFE873"}
+                      whileInView={{
+                        width: "60%",
+                        transition: { duration: 1, delay: 0.7 },
+                      }}
+                      viewport={{ once: true }}
                     />
                   </S.SkillBarContainer>
                 </S.SkillContainer>
@@ -95,9 +112,13 @@ const About = () => {
                   </S.SkillText>
                   <S.SkillBarContainer>
                     <S.SkillBar
-                      width={"40%"}
-                      delay={0.9}
+                      width={"0%"}
                       background={"#027DFD"}
+                      whileInView={{
+                        width: "40%",
+                        transition: { duration: 1, delay: 0.9 },
+                      }}
+                      viewport={{ once: true }}
                     />
                   </S.SkillBarContainer>
                 </S.SkillContainer>
@@ -128,11 +149,6 @@ const About = () => {
               </S.SideWrapper>
             </S.Side>
           </S.Wrapper>
-        </Layout>
-      </S.Wrapper>
-      <S.Wrapper>
-        <Layout tagName="section" first={true} full={true}>
-          <S.Content></S.Content>
         </Layout>
       </S.Wrapper>
     </S.Container>

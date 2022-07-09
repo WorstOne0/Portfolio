@@ -3,6 +3,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
+import { IoMdCodeWorking } from "react-icons/io";
+
 import * as S from "./styles";
 
 const NavBar = () => {
@@ -17,6 +19,10 @@ const NavBar = () => {
         <S.Icon>
           <FontAwesomeIcon icon={faUser} />
           <p>About Me</p>
+        </S.Icon>
+        <S.Icon>
+          <IoMdCodeWorking className="Icon" />
+          <p>Projects</p>
         </S.Icon>
         <S.Icon>
           <FontAwesomeIcon icon={faEnvelope} />

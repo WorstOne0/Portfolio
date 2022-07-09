@@ -54,6 +54,10 @@ export const Icon = styled.div`
   :hover {
     color: var(--color-primary);
   }
+
+  .Icon {
+    font-size: 3.8rem;
+  }
 `;
 
 export const Icons = styled.div``;
