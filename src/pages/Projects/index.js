@@ -14,7 +14,7 @@ const Projects = () => {
               <Layout tagName="h2">
                 <S.Title>Projetos</S.Title>
               </Layout>
-              <Layout tagName="div"></Layout>
+              <Layout tagName="div">Teste</Layout>
             </S.Content>
           </S.Wrapper>
         </Layout>
