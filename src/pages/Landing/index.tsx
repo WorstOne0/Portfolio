@@ -1,5 +1,13 @@
 // Pages
-import { Home, About, Contact, Projects } from "../index";
+import {
+  Home,
+  About,
+  Contact,
+  CPython,
+  Flutter,
+  NodeJS,
+  ReactJS,
+} from "../index";
 // Components
 import { NavBar } from "../../components";
 // Styles
@@ -15,7 +23,10 @@ const Landing = () => {
 
         <About />
 
-        <Projects />
+        <ReactJS />
+        <NodeJS />
+        <Flutter />
+        <CPython />
 
         <Contact />
       </S.Container>

@@ -23,7 +23,7 @@ const NavBar = () => {
           </S.Icon>
           <S.Icon>
             <IoMdCodeWorking className="Icon" />
-            <p>Projects</p>
+            <p>Skills</p>
           </S.Icon>
           <S.Icon>
             <FontAwesomeIcon icon={faEnvelope} className="FaIcon" />

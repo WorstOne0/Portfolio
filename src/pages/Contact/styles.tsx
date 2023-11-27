@@ -10,6 +10,8 @@ export const Container = styled.div`
   width: 100%;
   background: var(--color-background-dark);
 
+  scroll-snap-align: center;
+
   position: relative;
   overflow: hidden;
 

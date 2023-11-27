@@ -5,6 +5,8 @@ export const Container = styled.div`
   width: 100%;
   background: var(--color-background-dark);
 
+  scroll-snap-align: center;
+
   color: #fff;
   position: relative;
 `;

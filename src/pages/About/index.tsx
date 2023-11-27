@@ -1,5 +1,11 @@
 // React
-import { FaReact, FaPython, FaNodeJs, FaGraduationCap } from "react-icons/fa";
+import {
+  FaReact,
+  FaPython,
+  FaNodeJs,
+  FaGraduationCap,
+  FaRegCalendar,
+} from "react-icons/fa";
 import { RiFlutterFill } from "react-icons/ri";
 import { SiCplusplus } from "react-icons/si";
 import { GiComputing } from "react-icons/gi";
@@ -23,19 +29,24 @@ const About = () => {
               </Layout>
               <Layout tagName="p">
                 <S.Text>
-                  Eu sou um Estudante de Engenharia da Computação na UTFPR -
-                  Universidade Tecnológica Federal do Paraná. Sou um
-                  desenvolvedor <S.Bold>Full-Stack</S.Bold> autodidata, tenho
-                  experiência na criação de aplicações frontend com
-                  <S.Bold> ReactJS</S.Bold> e backend utilizizando
-                  <S.Bold> NodeJS/GraphQL</S.Bold>, tenho conhecimentos em
-                  <S.Bold> C/C++</S.Bold> e estou aprimorando minhas habilidades
-                  em <S.Bold> Python</S.Bold> e <S.Bold> Flutter</S.Bold>.
+                  Sou <S.Bold>Engenheiro da Computação</S.Bold> formado na UTFPR
+                  - Universidade Tecnológica Federal do Paraná. Como
+                  desenvolvedor
+                  <S.Bold> Full-Stack </S.Bold>
+                  autodidata, tenho habilidades sólidas na criação de aplicações
+                  frontend utilizando <S.Bold>ReactJS</S.Bold> e no
+                  desenvolvimento de backend com <S.Bold>NodeJS</S.Bold>. Além
+                  disso, possuo experiência na criação e publicação de
+                  aplicativos mobile utilizando
+                  <S.Bold> Flutter</S.Bold>, com presença nas lojas da
+                  <S.Bold> Play Store</S.Bold> e <S.Bold>Apple Store</S.Bold>.
+                  Meu conhecimento também abrange linguagens como
+                  <S.Bold> C/C++</S.Bold>.
                 </S.Text>
               </Layout>
             </S.Content>
             <S.Side>
-              <S.SideWrapper>
+              {/* <S.SideWrapper>
                 <S.SkillContainer>
                   <S.SkillText color={"#61dafb"}>
                     <FaReact className="Icon" />
@@ -121,7 +132,7 @@ const About = () => {
                     />
                   </S.SkillBarContainer>
                 </S.SkillContainer>
-              </S.SideWrapper>
+              </S.SideWrapper> */}
               <S.SideWrapper>
                 <S.AcademicLimits>
                   <S.AcademicContainer>
@@ -131,20 +142,23 @@ const About = () => {
                       Formação Acadêmica
                     </S.AcademicTitle>
                     <S.AcademicSubTitle>
-                      <p>
-                        <GiComputing className="Icon" />
-                        Engenharia da Computação
-                      </p>
-                      <S.AcademicYear>
-                        Fevereiro de 2016 - Cursando
-                      </S.AcademicYear>
+                      Engenharia da Computação
+                      <S.AcademicYear>Bacharelado</S.AcademicYear>
                     </S.AcademicSubTitle>
                     <S.AcademicCollege>
                       <p>Universidade Tecnológica Federal do Paraná - UTFPR</p>
-                      <p>Bacharelado</p>
+                      <S.AcademicYear>
+                        <FaRegCalendar style={{ marginRight: 5 }} /> Fev, 2016 -
+                        <FaRegCalendar style={{ margin: "0 5px" }} /> Jun, 2023
+                      </S.AcademicYear>
                     </S.AcademicCollege>
                   </S.AcademicContainer>
                 </S.AcademicLimits>
+              </S.SideWrapper>
+              <S.SideWrapper>
+                <Layout tagName="div">
+                  <S.Text>Hobbies - Steam - Anime - Links - Etc..</S.Text>
+                </Layout>
               </S.SideWrapper>
             </S.Side>
           </S.Wrapper>

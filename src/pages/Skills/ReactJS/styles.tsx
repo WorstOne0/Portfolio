@@ -55,6 +55,9 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
+  display: flex;
+  align-items: center;
+
   color: var(--color-primary);
   font-size: 8rem;
 
@@ -75,6 +78,7 @@ export const Side = styled.div`
 `;
 
 export const SideWrapper = styled.div`
+  height: 50%;
   width: 100%;
 
   display: flex;
@@ -188,7 +192,7 @@ export const AcademicSubTitle = styled.p`
 `;
 
 export const AcademicCollege = styled.p`
-  margin: 0 2rem 0 2rem;
+  margin: 0 2rem 2rem 2rem;
 
   display: flex;
   justify-content: space-between;
